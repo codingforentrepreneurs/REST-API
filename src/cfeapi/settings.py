@@ -26,7 +26,7 @@ SECRET_KEY = '_+-seo%0kh!3$18@w=oi#v6q8qf-az3r!6ic=_cqimv*_n&6%q'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-# APPEND_TRAILING_SLASH = True
+APPEND_SLASH = True
 
 # Application definition
 

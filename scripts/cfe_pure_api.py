@@ -29,9 +29,9 @@ def get_list(): #--> Lists all this out
 def create_update():
     new_data = {
         'user': 1,
-        "content": "Another new cool update"  
+        "content": "Another more cool content"  
     }
-    r = requests.post(BASE_URL + ENDPOINT, data=new_data)
+    r = requests.post(BASE_URL + ENDPOINT + "1/", data=new_data)
     print(r.headers)
     print(r.status_code)
     if r.status_code == requests.codes.ok:
@@ -41,7 +41,7 @@ def create_update():
 
 
 
-#print(get_list())
+# print(get_list())
 
 print(create_update())
 
