@@ -23,7 +23,7 @@ class UpdateQuerySet(models.QuerySet):
     #     return json.dumps(final_array)
 
     def serialize(self):
-        list_values = list(self.values("user", "content", "image"))
+        list_values = list(self.values("user", "content", "image", "id"))
         return json.dumps(list_values)
 
 
@@ -50,6 +50,7 @@ class Update(models.Model):
         except:
             image = ""            
         data = {
+            "id": self.id,
             "content": self.content,
             "user": self.user.id,
             "image": image
