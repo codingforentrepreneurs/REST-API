@@ -16,9 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from updates.views import update_model_detail_view
+from updates.views import json_example_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', update_model_detail_view),
+    url(r'^json/example/$', json_example_view),
 ]
