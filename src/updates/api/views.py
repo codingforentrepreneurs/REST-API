@@ -21,8 +21,24 @@ class UpdateModelDetailAPIView(HttpResponseMixin, CSRFExemptMixin, View):
     '''
     is_json = True
 
+    def get_object(self, id=None):
+        # try:
+        #     obj = UpdateModel.objects.get(id=id)
+        # except UpdateModel.DoesNotExist:
+        #     obj = None
+        """
+        Below handles a Does Not Exist Exception too
+        """
+        qs = UpdateModel.objects.filter(id=id)
+        if qs.count() == 1:
+            return qs.first()
+        return None
+
     def get(self, request, id, *args, **kwargs):
-        obj = UpdateModel.objects.get(id=id)
+        obj = self.get_object(id=id)
+        if obj is None:
+            error_data = json.dumps({"message": "Update not found"})
+            return self.render_to_response(error_data, status=404)
         json_data = obj.serialize()
         return self.render_to_response(json_data)
 
@@ -30,12 +46,24 @@ class UpdateModelDetailAPIView(HttpResponseMixin, CSRFExemptMixin, View):
         json_data = json.dumps({"message": "Not allowed, please use the /api/updates/ endpoint"})
         return self.render_to_response(json_data, status=403)
 
-    def put(self, request, *args, **kwargs):
-        json_data = {}
+    def put(self, request, id, *args, **kwargs):
+        obj = self.get_object(id=id)
+        if obj is None:
+            error_data = json.dumps({"message": "Update not found"})
+            return self.render_to_response(error_data, status=404)
+        #print(dir(request))
+        print(request.body)
+        new_data = json.loads(request.body)
+        print(new_data['content'])
+        json_data = json.dumps({"message": "Something"})
         return self.render_to_response(json_data)
 
-    def delete(self, request, *args, **kwargs):
-        json_data = {}
+    def delete(self, request, id, *args, **kwargs):
+        obj = self.get_object(id=id)
+        if obj is None:
+            error_data = json.dumps({"message": "Update not found"})
+            return self.render_to_response(error_data, status=404)
+        json_data = json.dumps({"message": "Something"})
         return self.render_to_response(json_data, status=403)
 
 
