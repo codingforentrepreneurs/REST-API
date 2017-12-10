@@ -53,3 +53,8 @@ This course will teach you exactly how to build one with Django and Python.
 [18 - Update & Delete Part 2](../../tree/bd6aa2191c34b02c20589a694115bf50efc08a50/)
 
 [19 - One Endpoint to Rule the Model](../../tree/050f84d6e923d3a3f92ee9c862911d5fd96a6298/)
+
+
+### Section 3 | Django Rest Framework
+
+**Coming Soon**
