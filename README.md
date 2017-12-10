@@ -1,12 +1,17 @@
 # REST-API
 
-COURSE: [http://joincfe.com/courses/rest-api](https://www.codingforentrepreneurs.com/courses/rest-api/)
+[![Rest API Course Logo](https://cfe2-static.s3-us-west-2.amazonaws.com/media/courses/rest-api/images/rest_api_bg.jpg)
+](https://www.codingforentrepreneurs.com/courses/rest-api/)
 
 Build a REST API by leveraging Django, Python and the Django Rest Framework.
 
 REST APIs are here to connect your web application to anything and everything. Build microservices, connect to client-side technologies like Angular & Ionic, and connect to other apps too.
 
-This course will teach you exactly how to build one with Django and Python.
+This course will teach you exactly how to build one with Django, Python, Django Rest Framework, and more.
+
+
+Full Course is here: [http://joincfe.com/courses/rest-api](https://www.codingforentrepreneurs.com/courses/rest-api/)
+
 
 ### Section 1 | API Basics
 
