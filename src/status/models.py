@@ -19,7 +19,7 @@ class StatusManager(models.Manager):
 
 
 class Status(models.Model): # fb status, instagram post, tweet, linkedin post
-    user        = models.ForeignKey(settings.AUTH_USER_MODEL)
+    user        = models.ForeignKey(settings.AUTH_USER_MODEL) # User instance
     content     = models.TextField(null=True, blank=True)
     image       = models.ImageField(upload_to=upload_status_image, null=True, blank=True)
     updated     = models.DateTimeField(auto_now=True)
