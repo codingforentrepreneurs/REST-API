@@ -1,9 +1,12 @@
 certifi==2017.11.5
 chardet==3.0.4
 Django==1.11.8
+django-filter==1.1.0
+djangorestframework==3.7.3
 gitdb2==2.0.3
 GitPython==2.1.7
 idna==2.6
+Markdown==2.6.10
 olefile==0.44
 Pillow==4.3.0
 pytz==2017.3
