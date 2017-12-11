@@ -26,3 +26,12 @@ class Status(models.Model): # fb status, instagram post, tweet, linkedin post
 
     def __str__(self):
         return str(self.content)[:50]
+
+    class Meta:
+        verbose_name = 'Status post'
+        verbose_name_plural = 'Status posts'
+
+
+
+
+
