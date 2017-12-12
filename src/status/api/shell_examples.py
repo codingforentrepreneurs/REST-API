@@ -85,8 +85,8 @@ class CustomSerializer(serializers.Serializer):
 data = {'email': 'hello@teamcfe.com', 'content': "please delete me"}
 create_obj_serializer = CustomSerializer(data=data)
 if create_obj_serializer.is_valid():
-    data = create_obj_serializer.data
-    print(data)
+    valid_data = create_obj_serializer.data
+    print(valid_data)
 
 
 

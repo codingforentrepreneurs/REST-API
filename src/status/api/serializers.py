@@ -8,13 +8,6 @@ Serializers -> validate data
 
 '''
 
-
-class CustomSerializer(serializers.Serializer):
-    content =      serializers.CharField()
-    email       =  serializers.EmailField()
-
-
-
 class StatusSerializer(serializers.ModelSerializer):
     class Meta:
         model = Status 
