@@ -4,6 +4,7 @@
 bin/
 include/
 pip-selfcheck.json
+static-server/media-root/status/cfe/
 
 # Django related 
 # src/<yourproject>/settings/local.py
