@@ -62,4 +62,28 @@ Full Course is here: [http://joincfe.com/courses/rest-api](https://www.codingfor
 
 ### Section 3 | Django Rest Framework
 
-**Coming Soon**
+*1 - Introduction: no code*
+
+[2 - Install Django Rest Framework](../../tree/883e6ea2a26182641f5fe0e67594c82c1e104267/)
+
+[3 - Status Model & App](../../tree/593dd428a239ceac137b8701e47d2d3e76903c3f/)
+
+[4 - Model Form for Validation](../../tree/17e879c79d257650ff5e8909d980162b66c1cc6f/)
+
+[5 - Creating a Serailizer](../../tree/56372a0829756b26b401cdf326793f0c2baa44ac/)
+
+[6 - Create & Update through Serializers](../../tree/dfa1cdbdb385071e6959b1095a124858f2aaa8ab/)
+
+[7 - Validation & Fields](../../tree/de6b35b897781c38d9e0a0f595a240204209cd6a/)
+
+[8 - API Endpoints Overview](../../tree/8dc4cd7de9a69edd5b98dedd1a4bebdb14cc1277/)
+
+[9 - List & Search API View](../../tree/2624a7711fcb39ecfaa5e2b9f873eb9d486f23da/)
+
+[10 - Create API View](../../tree/a1eff1e075ee63ffe9541d6b0893bf11ef89fdd8/)
+
+[11 - Detail API View](../../tree/896549e9ff9ca1ad6fef4c7988039e0ed4448fc2/)
+
+[12 - Update & Delete API Views](../../tree/6e15b6f23e5e58edf72317b0a685937de614d821/)
+
+[13 - Mixins to Power Http Methods](../../tree/398451a3e2010dd3da2b6e3f0950a19c6c2d0038/)
