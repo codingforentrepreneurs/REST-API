@@ -87,3 +87,11 @@ Full Course is here: [http://joincfe.com/courses/rest-api](https://www.codingfor
 [12 - Update & Delete API Views](../../tree/6e15b6f23e5e58edf72317b0a685937de614d821/)
 
 [13 - Mixins to Power Http Methods](../../tree/398451a3e2010dd3da2b6e3f0950a19c6c2d0038/)
+
+[14 - One API Endpoint for CRUDL](../../tree/71e527bfe24e09f58aee81f08b5b2008c3f86514/)
+
+[15 - One API Endpoint for CRUDL Part 2](../../tree/893d8dd11a5236cc795b8d4aaa3d8a4aa0c10a8e/)
+
+[16 - Uploading & Handling Images](../../tree/c669e4ed13266920ed91a243d6918edb23a66a11/)
+
+[17 - 2 Views for CRUDL](../../tree/61ac51f888057d320a9e54417f66af3c86943da4/)
