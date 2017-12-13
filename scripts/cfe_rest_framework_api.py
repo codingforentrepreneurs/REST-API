@@ -8,6 +8,30 @@ ENDPOINT = "http://127.0.0.1:8000/api/status/"
 image_path = os.path.join(os.getcwd(), "logo.jpg")
 
 
+
+get_endpoint =  ENDPOINT + str(12)
+post_data = json.dumps({"content": "Some random content"})
+
+
+r = requests.get(get_endpoint)
+print(r.text)
+
+
+
+r2 = requests.get(ENDPOINT)
+print(r2.status_code)
+
+
+
+post_headers = {
+    'content-type': 'application/json'
+}
+
+post_response = requests.post(ENDPOINT, data=post_data, headers=post_headers)
+print(post_response.text)
+
+
+
 # def do_img(method='get', data={}, is_json=True, img_path=None):
 #     headers = {}
 #     if is_json:
@@ -28,10 +52,9 @@ image_path = os.path.join(os.getcwd(), "logo.jpg")
 
 
 # do_img(
-#     method='put', 
+#     method='post', 
 #     data={'id': 23, 'user': 1, "content": "Some new content"}, 
-#     is_json=False, 
-#     img_path=image_path
+#     is_json=True
 #     )
 
 
