@@ -3,32 +3,59 @@ import requests
 import os
 
 
+AUTH_ENDPOINT = "http://127.0.0.1:8000/api/auth/jwt/"
+REFRESH_ENDPOINT = AUTH_ENDPOINT + "refresh/"
 ENDPOINT = "http://127.0.0.1:8000/api/status/"
 
 image_path = os.path.join(os.getcwd(), "logo.jpg")
 
-
-
-get_endpoint =  ENDPOINT + str(12)
-post_data = json.dumps({"content": "Some random content"})
-
-
-r = requests.get(get_endpoint)
-print(r.text)
-
-
-
-r2 = requests.get(ENDPOINT)
-print(r2.status_code)
-
-
-
-post_headers = {
-    'content-type': 'application/json'
+headers = {
+    "Content-Type": "application/json"
 }
 
-post_response = requests.post(ENDPOINT, data=post_data, headers=post_headers)
-print(post_response.text)
+data = {
+    'username': 'cfe',
+    'password': 'learncode'
+}
+
+r = requests.post(AUTH_ENDPOINT, data=json.dumps(data), headers=headers)
+token = r.json()['token']
+
+#print(token)
+
+refresh_data = {
+    'token': token
+}
+
+new_response = requests.post(REFRESH_ENDPOINT, data=json.dumps(refresh_data), headers=headers)
+new_token = new_response.json()#['token']
+
+print(new_token)
+
+
+
+
+
+# get_endpoint =  ENDPOINT + str(12)
+# post_data = json.dumps({"content": "Some random content"})
+
+
+# r = requests.get(get_endpoint)
+# print(r.text)
+
+
+
+# r2 = requests.get(ENDPOINT)
+# print(r2.status_code)
+
+
+
+# post_headers = {
+#     'content-type': 'application/json'
+# }
+
+# post_response = requests.post(ENDPOINT, data=post_data, headers=post_headers)
+# print(post_response.text)
 
 
 
