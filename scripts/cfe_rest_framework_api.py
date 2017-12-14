@@ -46,7 +46,7 @@ with open(image_path, 'rb') as image:
     file_data = {
         'image': image
     }
-    r = requests.put(ENDPOINT, data=data2, headers=headers2, files=file_data)
+    r = requests.get(ENDPOINT, headers=headers2)
     print(r.text)
     #r = requests.post(BASE_ENDPOInT, data=data2, headers=headers2, files=file_data)
     #print(r.text)
