@@ -1,3 +1,5 @@
+import datetime
+
 from django.contrib.auth import get_user_model
 from django.utils import timezone
 
@@ -15,12 +17,10 @@ User = get_user_model()
 
 
 class UserRegisterSerializer(serializers.ModelSerializer):
-    #password            = serializers.CharField(style={'input_type': 'password'}, write_only=True)
     password2           = serializers.CharField(style={'input_type': 'password'}, write_only=True)
     token               = serializers.SerializerMethodField(read_only=True)
     expires             = serializers.SerializerMethodField(read_only=True)
-    token_response      = serializers.SerializerMethodField(read_only=True)
-    
+    message             = serializers.SerializerMethodField(read_only=True)
     class Meta:
         model = User
         fields = [
@@ -30,16 +30,14 @@ class UserRegisterSerializer(serializers.ModelSerializer):
             'password2',
             'token',
             'expires',
-            'token_response',
+
+            'message',
 
         ]
         extra_kwargs = {'password': {'write_only': True}}
 
-    def get_token_response(self, obj):
-        payload = jwt_payload_handler(user)
-        token = jwt_encode_handler(payload)
-        response = jwt_response_payload_handler(token, user, request=None)
-        return response
+    def get_message(self, obj):
+        return "Thank you for registering. Please verify your email before continuing."
 
     def get_expires(self, obj):
         return timezone.now() + expire_delta - datetime.timedelta(seconds=200)
@@ -75,6 +73,7 @@ class UserRegisterSerializer(serializers.ModelSerializer):
                 username=validated_data.get('username'), 
                 email=validated_data.get('email'))
         user_obj.set_password(validated_data.get('password'))
+        user_obj.is_active = False
         user_obj.save()
         return user_obj
 
