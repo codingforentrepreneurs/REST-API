@@ -11,12 +11,12 @@ image_path = os.path.join(os.getcwd(), "logo.jpg")
 
 headers = {
     "Content-Type": "application/json",
-    #"Authorization": "JWT " + 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImNmZSIsImV4cCI6MTUxMzIwNjEwOSwiZW1haWwiOiIiLCJvcmlnX2lhdCI6MTUxMzIwNTgwOX0.JCIM7Es7-pJpKVv4-OrEjCFVYsIegRxELu6YATayu7k',
+    "Authorization": "JWT " + 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNSwidXNlcm5hbWUiOiJjZmUxNiIsImV4cCI6MTUxMzIxMDMxOCwiZW1haWwiOiJjZmUxNkB0ZWFtY2ZlLmNvbSIsIm9yaWdfaWF0IjoxNTEzMjEwMDE4fQ.DXPPoCEwnV8uPjoCaFGqTenk8VG1m8tD3Xa0PBVZJ-o',
 }
 
 data = {
-    'username': 'cfe15',
-    'email': 'cfe15@teamcfe.com',
+    'username': 'cfe17',
+    'email': 'cfe17@teamcfe.com',
     'password': 'learncode',
     'password2': 'learncode'
 }
