@@ -7,7 +7,7 @@ from rest_framework_jwt.settings import api_settings
 
 
 from .permissions import AnonPermissionOnly
-from .serializers import UserRegisterSerializer
+from .serializers import UserRegisterSerializer, UserDetailSerializer
 
 jwt_payload_handler             = api_settings.JWT_PAYLOAD_HANDLER
 jwt_encode_handler              = api_settings.JWT_ENCODE_HANDLER
@@ -16,6 +16,8 @@ jwt_response_payload_handler    = api_settings.JWT_RESPONSE_PAYLOAD_HANDLER
 
 
 User = get_user_model()
+
+
 
 class AuthAPIView(APIView):
     permission_classes      = [AnonPermissionOnly]
