@@ -95,3 +95,27 @@ Full Course is here: [http://joincfe.com/courses/rest-api](https://www.codingfor
 [16 - Uploading & Handling Images](../../tree/c669e4ed13266920ed91a243d6918edb23a66a11/)
 
 [17 - 2 Views for CRUDL](../../tree/61ac51f888057d320a9e54417f66af3c86943da4/)
+
+[18 - Authentication & Permissions](../../tree/ea6930f4f640b0707f8d1bb65d113893a33b6b3b/)
+
+[19 - Global Settings for Authentication & Permissions](../../tree/3edfe382f9040b4deed09186f062c4d663c974a4/)
+
+[20 - Permission Tests with Python Requests](../../tree/7580145d643e6c50b1ad8ddf8920e93ad940484e/)
+
+[21 - Implement JWT Authentication](../../tree/e1fc746760334c96db6094275c1c2d10d82c73de/)
+
+[22 - JWT Authorization Header](../../tree/3b522f615e8291580a7ae5edb8180a0b561c9852/)
+
+[23 - Custom JWT Response Payload Handler](../../tree/dff0fb139845f1cee903b40c17647c872301aa6f/)
+
+[24 - Custom Authentication View](../../tree/a44f9d2860067c49912c49ed6b20fddd9c789177/)
+
+[25 - Register API View](../../tree/cc5c992ec5a3877de0602ff6735cdd8e84009099/)
+
+[26 - User Register Serializer](../../tree/e292439149e55f755978fd52151912931b09b1c9/)
+
+[27 - Serializer Method Field](../../tree/37aace46c28c053dcf1f7e95ef8322e92d5b5c75/)
+
+[28 - Get Context Data](../../tree/0c7baafe027d6604ab064a54ec6051bc0dea7cf5/)
+
+[29 - Custom Permissions](../../tree/72beb48dd0e5f43d7d7b3b79571b4aecec4f1789/)
