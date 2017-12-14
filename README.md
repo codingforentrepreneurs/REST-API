@@ -119,3 +119,17 @@ Full Course is here: [http://joincfe.com/courses/rest-api](https://www.codingfor
 [28 - Get Context Data](../../tree/0c7baafe027d6604ab064a54ec6051bc0dea7cf5/)
 
 [29 - Custom Permissions](../../tree/72beb48dd0e5f43d7d7b3b79571b4aecec4f1789/)
+
+[30 - Is Owner or Read Only Permission](../../tree/fe8dd052b0613ac650e38528e2fcde1cf5c5f3f9/)
+
+[31 - Nested Serializer Part 1](../../tree/d825f35a3f6f97b92ec2f0246837b4ef5518beff/)
+
+[33 - Nested Serializer Part 2 & 3](../../tree/9b95f18885ed57dd6a74d845a79cbc9714726e23/)
+
+[34 - Pagination to Manage Request Load](../../tree/72515a7179cdd224c9f366ab0da507accbcbe0cf/)
+
+[35 - Search Filter & Ordering](../../tree/f0074a2c3fd06e03003b4ab4cf127f5daa15defd/)
+
+[36 - Reverse URLs with DRF](../../tree/4fc019b12fd3c292fceb14595349f89a17d743eb/)
+
+[37 - Serializer related fields](../../tree/7dc891873605372c3259703891bb4633fc06c097/)
