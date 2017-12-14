@@ -3,27 +3,80 @@ import requests
 import os
 
 
-AUTH_ENDPOINT = "http://127.0.0.1:8000/api/auth/register/"
+
+
+AUTH_ENDPOINT = "http://127.0.0.1:8000/api/auth/"
 REFRESH_ENDPOINT = AUTH_ENDPOINT + "refresh/"
-ENDPOINT = "http://127.0.0.1:8000/api/status/"
+
 
 image_path = os.path.join(os.getcwd(), "logo.jpg")
 
 headers = {
     "Content-Type": "application/json",
-    "Authorization": "JWT " + 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNSwidXNlcm5hbWUiOiJjZmUxNiIsImV4cCI6MTUxMzIxMDMxOCwiZW1haWwiOiJjZmUxNkB0ZWFtY2ZlLmNvbSIsIm9yaWdfaWF0IjoxNTEzMjEwMDE4fQ.DXPPoCEwnV8uPjoCaFGqTenk8VG1m8tD3Xa0PBVZJ-o',
 }
 
 data = {
-    'username': 'cfe17',
-    'email': 'cfe17@teamcfe.com',
+    'username': 'cfe',
     'password': 'learncode',
-    'password2': 'learncode'
 }
 
 r = requests.post(AUTH_ENDPOINT, data=json.dumps(data), headers=headers)
-token = r.json() #['token']
+token = r.json()['token']
 print(token)
+
+BASE_ENDPOInT = 'http://127.0.0.1:8000/api/status/'
+ENDPOINT = BASE_ENDPOInT + "28/"
+
+
+headers2 = {
+    #"Content-Type": "application/json",
+    "Authorization": "JWT " + token
+}
+
+data2 = {
+    'content': 'this new content post'
+}
+
+# Create
+# Retreive
+# Update
+# Delete
+
+with open(image_path, 'rb') as image:
+    file_data = {
+        'image': image
+    }
+    r = requests.put(ENDPOINT, data=data2, headers=headers2, files=file_data)
+    print(r.text)
+    #r = requests.post(BASE_ENDPOInT, data=data2, headers=headers2, files=file_data)
+    #print(r.text)
+
+
+
+
+
+
+# AUTH_ENDPOINT = "http://127.0.0.1:8000/api/auth/register/"
+# REFRESH_ENDPOINT = AUTH_ENDPOINT + "refresh/"
+# ENDPOINT = "http://127.0.0.1:8000/api/status/"
+
+# image_path = os.path.join(os.getcwd(), "logo.jpg")
+
+# headers = {
+#     "Content-Type": "application/json",
+#     "Authorization": "JWT " + 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNSwidXNlcm5hbWUiOiJjZmUxNiIsImV4cCI6MTUxMzIxMDMxOCwiZW1haWwiOiJjZmUxNkB0ZWFtY2ZlLmNvbSIsIm9yaWdfaWF0IjoxNTEzMjEwMDE4fQ.DXPPoCEwnV8uPjoCaFGqTenk8VG1m8tD3Xa0PBVZJ-o',
+# }
+
+# data = {
+#     'username': 'cfe17',
+#     'email': 'cfe17@teamcfe.com',
+#     'password': 'learncode',
+#     'password2': 'learncode'
+# }
+
+# r = requests.post(AUTH_ENDPOINT, data=json.dumps(data), headers=headers)
+# token = r.json() #['token']
+# print(token)
 
 # refresh_data = {
 #     'token': token
