@@ -133,3 +133,11 @@ Full Course is here: [http://joincfe.com/courses/rest-api](https://www.codingfor
 [36 - Reverse URLs with DRF](../../tree/4fc019b12fd3c292fceb14595349f89a17d743eb/)
 
 [37 - Serializer related fields](../../tree/7dc891873605372c3259703891bb4633fc06c097/)
+
+[38 - Automated Testing](../../tree/9737e3490b3cf466b18fe83c79534287574d280d/)
+
+[39 - Testing User API](../../tree/9869317010362f425c76fec2ff9a423d10d2e986/)
+
+[41 - Testing with a Temporary Image](../../tree/c03d2775661413e85a9733e01fe34742ad6620c8/)
+
+*42 - Final wrap-up: no code*
