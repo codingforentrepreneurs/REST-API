@@ -3,6 +3,7 @@ chardet==3.0.4
 Django==1.11.8
 django-filter==1.1.0
 djangorestframework==3.7.3
+djangorestframework-jwt==1.11.0
 gitdb2==2.0.3
 GitPython==2.1.7
 idna==2.6
