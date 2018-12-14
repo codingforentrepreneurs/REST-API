@@ -1,6 +1,6 @@
 certifi==2017.11.5
 chardet==3.0.4
-Django==1.11.8
+Django==1.11.17
 django-filter==1.1.0
 djangorestframework==3.7.3
 djangorestframework-jwt==1.11.0
@@ -11,6 +11,6 @@ Markdown==2.6.10
 olefile==0.44
 Pillow==4.3.0
 pytz==2017.3
-requests==2.18.4
+requests>=2.20.0
 smmap2==2.0.3
-urllib3==1.22
+urllib3>=1.23
